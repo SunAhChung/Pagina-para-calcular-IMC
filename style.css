@@ -1,0 +1,54 @@
+body{
+    background-color: #ffffff
+    margin: 0
+    padding: 0
+}
+.middle{
+    position: absolute;
+    top: 38%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+.btn{
+    position: relative;
+    display: block;
+    color:rgb(116, 40, 187);
+    font-size: 30px;
+    font-family: "franklin Gothic Medium";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid rgb(116, 40, 187);
+    padding: 10px 60px;
+       overflow: hidden;
+    transition: 1s all ease;
+
+}
+.btn::before{
+    background: rgb(250, 255, 206);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.btn1::before{
+    width: 0;
+    height: 100%;
+}
+
+.btn:hover::before{
+    width: 100%;
+}
+
+.alert{
+    background: #ffdb9b
+    padding: 20px 40px;
+    min-width: 420px;
+    position: absolute;
+    right:0px;
+    top:10px;
+    border-radius: 4px;
+    border-left: 8px solid #ffa502;
+}

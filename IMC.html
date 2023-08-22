@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#075290">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1
+        style="color:rgb(255, 126, 208); 
+        font-family: Franklin Gothic Medium;
+        font-size: 300%;
+        "
+        
+        >Calculadora de Indice de Masa Corporal</h1>
+    <h2
+        style="color:rgb(167, 202, 255); 
+        font-family: Franklin Gothic Medium;
+        font-size: 150%;
+        "
+        >Peso en kilogramos <input type="text" id="peso" placeholder="Ejemplo: 76.3"></h2>
+    <h2 
+        style="color:rgb(167, 202, 255); 
+        font-family: Franklin Gothic Medium;
+        font-size: 150%;
+        "
+        >Altura en metros <input type="text" id="altura" placeholder="Ejemplo: 1.75"></h3>
+    <button class="middle"> 
+        <a href="" class="btn btn1">Calcular el IMC</a>
+    </button>
+    <script>
+        const peso=document.querySelector('#peso')
+        const altura=document.querySelector('#altura')
+        const button=document.querySelector('button')
+        
+        let imc
+        button.addEventListener('click',()=>{
+         imc= peso.value / altura.value ** 2
+        alert(`Tu índice de masa corporal es de ${imc.toFixed(3)}` )
+        
+         console.log(imc);
+        })       
+    </script>
+    <h4
+    style="
+        font-family: Franklin Gothic Medium;
+        font-size: 110%;
+        background-color: rgb(116, 40, 187);
+        width: 55%;
+        "><div>
+            <p1
+            style="color:#f498c2;">IMC menor a 16 Delgadez severa </p1>
+        </div>
+        <div>
+            <p2
+            style="color:#fcdcdf;">IMC 16.0-16.9 Delgadez moderada</p2>
+        </div>
+            <p3
+            style="color:#FEFFBF;">IMC 17.0-18.4 Delgadez leve </p3>
+        <div>
+            <p4
+            style="color:#B5EAD7;">IMC 18.5-24.9 Peso normal</p4>
+        </div>
+        <div>
+            <p5
+            style="color:#FEFFBF;">IMC 25.0-29.9 Sobrepeso (preobeso)</p5>
+        </div>
+        <div>
+            <p6
+            style="color: #fcdcdf;">IMC 30.0-34.9 Obesidad Grado I (leve)</p6>
+        </div>
+        <div>
+            <p7
+            style="color:#f498c2;">IMC 35.0-39.9 Obesidad Grado II (media)</p7>
+        </div> 
+        <div>
+            <p8
+            style="color:#FF9AA2;">IMC mayor a 40 Obesidad Grado III (morbida)</p8>
+        </div>
+</h4>
+</body>
+</html>
